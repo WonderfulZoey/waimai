@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>百度外卖</title>
+    <script type="text/javascript">
+        //计算rem值
+        document.querySelector("html").style.fontSize = window.screen.width / 20 + "px";
+
+        window.onresize = function () {
+            document.querySelector("html").style.fontSize = window.screen.width / 20 + "px";
+        }
+    </script>
+
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+
+<body>
+    <!-- 加载页面 -->
+    <div class="loading-page" style="display:none">
+        <div class="rider"></div>
+        <div class="progress"></div>
+        <div class="info"></div>
+
+        <div class="logo"></div>
+        <div class="copyright">
+            @ 2019 Baidu Waimai Produced
+        </div>
+    </div>
+
+    <!-- 欢迎页面 -->
+    <div class="welcome-page" style="display:none">
+        <div class="info">
+            <div class="hello"></div>
+        </div>
+        <div class="play"></div>
+
+        <div class="cloud"></div>
+
+        <div class="grass1"></div>
+        <div class="grass2"></div>
+        <div class="tree"></div>
+
+        <div class="bear-box">
+            <div class="bear"></div>
+            <div class="smoke"></div>
+        </div>
+
+        <div class="btn-box">
+            <div class="btn"></div>
+            <div class="circle1"></div>
+            <div class="circle2"></div>
+        </div>
+    </div>
+
+    <!-- 外卖页 -->
+    <div class="waimai-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide page1">
+                <div class="title">
+                    <h3>生活中，</h3>
+                    <p>经常有这种时候...</p>
+                    <div class="line"></div>
+                </div>
+                <div class="slide-page1" style="display:none">
+                    <div class="bg"></div>
+                    <div class="person">
+                        <div class="files">
+                            <div class="paper1"></div>
+                            <div class="paper2"></div>
+                        </div>
+                    </div>
+                    <div class="msg-container">
+                        <div class="info"></div>
+                    </div>
+                </div>
+                <div class="slide-page2" style="display:none">
+                    <div class="bg"></div>
+                    <div class="person">
+                        <div class="leg1"></div>
+                        <div class="leg2"></div>
+                    </div>
+                    <div class="msg-container">
+                        <div class="info"></div>
+                    </div>
+                </div>
+                <div class="slide-page3">
+                    <div class="bg"></div>
+                    <div class="person">
+                       <div class="word1"></div>
+                       <div class="word2"></div>
+                       <div class="word3"></div>
+                       <div class="word4"></div>
+                    </div>
+                    <div class="msg-container">
+                        <div class="info"></div>
+                    </div>
+                </div>
+                <div class="sphere"></div>
+                <div class="bear"></div>
+            </div>
+            <div class="swiper-slide page2">
+                <div class="title">
+                    <h3>这时候，</h3>
+                    <p>如果有一份美味的外卖...</p>
+                    <p>正好出现...</p>
+                    <div class="line"></div>
+                </div>
+                <div class="bg"></div>
+                <div class="bear">
+                    <div class="face1"></div>
+                    <div class="face2"></div>
+                </div>
+                <div class="sphere"></div>
+                <div class="table"></div>
+                <div class="food"></div>
+            </div>
+            <div class="swiper-slide page3">31</div>
+            <div class="swiper-slide page4">41</div>
+            <div class="swiper-slide page5">51</div>
+            <div class="swiper-slide page6">61</div>
+            <div class="swiper-slide page7">71</div>
+        </div>
+    </div>
+</body>
+
+<script type="text/javascript" src="lib/swiper/swiper.min.js"></script>
+<script type="text/javascript" src="lib/zepto/event.js"></script>
+<script type="text/javascript" src="lib/zepto/touch.js"></script>
+<script type="text/javascript" src="lib/zepto/fx.js"></script>
+<script type="text/javascript" src="lib/zepto/fx_methods.js"></script>
+
+<script type="text/javascript">
+    var swiper = new Swiper(".waimai-container", {
+        direction: "vertical"
+    })
+</script>
+
+</html>
